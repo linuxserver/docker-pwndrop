@@ -27,3 +27,7 @@ repo_vars:
   - CI_DOCKERENV='TZ=US/Pacific'
   - CI_AUTH='user:password'
   - CI_WEBPATH='/pwndrop'
+sponsor_links:
+  - { name: "Pwndrop - Patreon", url: "https://patreon.com/mrgretzky" }
+  - { name: "Pwndrop - Ko-fi", url: "https://ko-fi.com/mrgretzky" }
+  - { name: "Pwndrop - Liberapay", url: "https://liberapay.com/mrgretzky" }
