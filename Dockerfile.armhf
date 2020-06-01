@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm32v7-3.11 as buildstage
+FROM lsiobase/alpine:arm32v7-3.12 as buildstage
 
 # build variables
 ARG PWNDROP_RELEASE
@@ -36,7 +36,7 @@ echo "**** fetch source code ****" && \
  cp -r ./www /app/pwndrop/admin
 
 ############## runtime stage ##############
-FROM lsiobase/alpine:arm32v7-3.11
+FROM lsiobase/alpine:arm32v7-3.12
 
 # set version label
 ARG BUILD_DATE
