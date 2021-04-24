@@ -40,6 +40,7 @@ Find us at:
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fpwndrop%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/pwndrop/latest/index.html)
 
 [Pwndrop](https://github.com/kgretzky/pwndrop) is a self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.
+
 [![pwndrop](https://raw.githubusercontent.com/kgretzky/pwndrop/master/media/pwndrop-logo-512.png)](https://github.com/kgretzky/pwndrop)
 
 ## Supported Architectures
