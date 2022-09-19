@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.13 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.15 as buildstage
 
 # build variables
 ARG PWNDROP_RELEASE
@@ -36,7 +36,7 @@ echo "**** fetch source code ****" && \
  cp -r ./www /app/pwndrop/admin
 
 ############## runtime stage ##############
-FROM ghcr.io/linuxserver/baseimage-alpine:3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:3.15
 
 # set version label
 ARG BUILD_DATE
