@@ -8,9 +8,7 @@ ARG PWNDROP_RELEASE
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache \
-    g++ \
-    gcc \
-    git \
+    build-base \
     go
 
 RUN \
