@@ -1,9 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-exec \
-	s6-setuidgid abc \
-		/app/pwndrop/pwndrop \
-			-debug \
-			-no-autocert \
-			-no-dns \
-			-config /defaults/pwndrop.ini

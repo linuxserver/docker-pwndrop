@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+mkdir -p /config/data
+
+if [[ ! -f "/config/data/pwndrop.db" ]]; then
+    SECRET_PATH=${SECRET_PATH:-/pwndrop}
+    echo "New install detected, starting pwndrop with secret path ${SECRET_PATH}"
+    echo -e "\n[setup]\nsecret_path = \"${SECRET_PATH}\"" >> /defaults/pwndrop.ini
+fi
+
+# permissions
+lsiown -R abc:abc \
+    /config \
+    /defaults
