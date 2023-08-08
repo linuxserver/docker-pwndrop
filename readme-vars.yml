@@ -36,9 +36,10 @@ optional_block_1_items: ""
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  Access the web gui at `http://<your-ip>:8080/pwndrop` (replace `/pwndrop` with your SECRET_PATH if you set one).
+  Access the web gui at `http://<your-ip>:8080/pwndrop` (replace `/pwndrop` with your `SECRET_PATH` if you set one).
 # changelog
 changelogs:
+  - {date: "07.08.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "03.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3."}
   - {date: "19.09.22:", desc: "Rebasing to alpine 3.15."}
