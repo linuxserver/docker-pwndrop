@@ -79,7 +79,7 @@ services:
       - TZ=Etc/UTC
       - SECRET_PATH=/pwndrop #optional
     volumes:
-      - /path/to/appdata:/config
+      - /path/to/pwndrop/appdata:/config
     ports:
       - 8080:8080
     restart: unless-stopped
@@ -95,7 +95,7 @@ docker run -d \
   -e TZ=Etc/UTC \
   -e SECRET_PATH=/pwndrop `#optional` \
   -p 8080:8080 \
-  -v /path/to/appdata:/config \
+  -v /path/to/pwndrop/appdata:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/pwndrop:latest
 ```
@@ -274,6 +274,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **20.03.24:** - Rebase to Alpine 3.19.
 * **07.08.23:** - Rebase to Alpine 3.18.
 * **03.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **13.02.23:** - Rebase to Alpine 3.17, migrate to s6v3.
