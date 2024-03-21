@@ -14,19 +14,16 @@ available_architectures:
 development_versions: false
 development_versions_items:
   - {tag: "latest", desc: "Stable releases"}
-  - {tag: "development", desc: "Prereleases from their GitHub"}
+  - {tag: "development", desc: "Pre-releases from their GitHub"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - {vol_path: "/config", vol_host_path: "/path/to/appdata", desc: "Contains all relevant configuration and data."}
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/appdata", desc: "Contains all relevant configuration and data."}
 param_usage_include_ports: true
 param_ports:
   - {external_port: "8080", internal_port: "8080", port_desc: "web gui"}
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London"}
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
@@ -39,6 +36,7 @@ app_setup_block: |
   Access the web gui at `http://<your-ip>:8080/pwndrop` (replace `/pwndrop` with your `SECRET_PATH` if you set one).
 # changelog
 changelogs:
+  - {date: "20.03.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "07.08.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "03.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3."}
