@@ -12,9 +12,6 @@ available_architectures:
   - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: false
-development_versions_items:
-  - {tag: "latest", desc: "Stable releases"}
-  - {tag: "development", desc: "Pre-releases from their GitHub"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
@@ -36,6 +33,7 @@ app_setup_block: |
   Access the web gui at `http://<your-ip>:8080/pwndrop` (replace `/pwndrop` with your `SECRET_PATH` if you set one).
 # changelog
 changelogs:
+  - {date: "04.06.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "20.03.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "07.08.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "03.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
