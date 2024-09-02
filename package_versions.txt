@@ -16,7 +16,7 @@ coreutils                      9.5-r1                              apk
 coreutils-env                  9.5-r1                              apk          
 coreutils-fmt                  9.5-r1                              apk          
 coreutils-sha512sum            9.5-r1                              apk          
-curl                           8.9.0-r0                            apk          
+curl                           8.9.1-r1                            apk          
 findutils                      4.9.0-r5                            apk          
 github.com/asdine/storm        v2.1.2+incompatible                 go-module    
 github.com/fatih/color         v1.7.0                              go-module    
@@ -39,7 +39,7 @@ libacl                         2.3.2-r0                            apk
 libattr                        2.5.2-r0                            apk          
 libbsd                         0.12.2-r0                           apk          
 libcrypto3                     3.3.1-r3                            apk          
-libcurl                        8.9.0-r0                            apk          
+libcurl                        8.9.1-r1                            apk          
 libidn2                        2.3.7-r0                            apk          
 libintl                        0.22.5-r0                           apk          
 libmd                          1.1.0-r0                            apk          
