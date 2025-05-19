@@ -22,7 +22,7 @@ github.com/asdine/storm        v2.1.2+incompatible                 go-module
 github.com/fatih/color         v1.7.0                              go-module    
 github.com/gorilla/mux         v1.7.2                              go-module    
 github.com/kgretzky/daemon     v0.11.1                             go-module    
-github.com/kgretzky/pwndrop    (devel)                             go-module    
+github.com/kgretzky/pwndrop    UNKNOWN                             go-module    
 github.com/mattn/go-colorable  v0.1.1                              go-module    
 github.com/mattn/go-isatty     v0.0.7                              go-module    
 github.com/miekg/dns           v1.1.12                             go-module    
