@@ -81,6 +81,7 @@ init_diagram: |
   "pwndrop:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "17.07.26:", desc: "Rebase to Alpine 3.24."}
   - {date: "04.06.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "20.03.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "07.08.23:", desc: "Rebase to Alpine 3.18."}
